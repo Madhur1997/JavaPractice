@@ -12,6 +12,12 @@ public class JavaExceptionExamples {
     
     // 1. IOException - File/IO operations
     public static void checkedIOException() throws IOException {
+        // try(FileInputStream file = new FileInputStream("config.txt")) {
+        //     BufferedReader reader = new BufferedReader(new FileReader("data.txt"));
+        //     String line = reader.readLine();  // IOException
+        // }catch(FileNotFoundException e) {
+        //     e.printStackTrace();
+        // }
         FileInputStream file = new FileInputStream("config.txt");  // FileNotFoundException (subclass)
         BufferedReader reader = new BufferedReader(new FileReader("data.txt"));
         String line = reader.readLine();  // IOException
