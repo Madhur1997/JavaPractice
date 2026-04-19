@@ -1,29 +1,5 @@
 package net.sfdc.ci;
 
-/*
-FR:
-1. View balance
-2. Withdraw cash
-3. Insert cash
-4. Change pin
-
-Flow:
-1. Insert debit card, enter pin, perform operation.
-2. Cash handler: Chain of responsibility
-3. State pattern to handle various states
-
-
-Classes:
-1. AtmMachine
-2. State interface
-3. IdleState, CardInsertedState, CardValidatedState
-4. CashHandler class
-5. Account class
-5. AccountManager class
- */
-
-import java.util.Comparator;
-
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {

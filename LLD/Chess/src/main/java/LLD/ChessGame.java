@@ -16,14 +16,14 @@ enum DrawReason {
 
 enum GameState {
     ACTIVE,
-    PLAYING,
     WHITEWINNER,
     BLACKWINNER,
     DRAW
 }
 
 class MoveResult {
-    public boolean moveStatus;
+    public boolean validMove;
+    public GameState gameState;
     public Optional<DrawReason> drawReason;
 }
 
@@ -81,7 +81,7 @@ public class ChessGame {
 
     public MoveResult makeMove(Move move) {
 
-//        this.board.
+        // Check after ma
         return new MoveResult();
     }
 }
@@ -178,7 +178,7 @@ class Position {
 }
 
 // Each special type of move stores its characteristics, for ex
-// 1. En passant move stores the position of captured piece because captured piece position is not the same as final position.
+// 1. En passant move
 // 2. Castling move stores the Rook position.
 // 3. Promotion piece stores the promoted piece.
 abstract class Move{
